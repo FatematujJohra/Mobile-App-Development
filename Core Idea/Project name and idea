@@ -1,0 +1,120 @@
+###  AI-Based Diet and Health Monitoring App
+
+This is one of the most impressive projects you can build for your final year. The app monitors daily food intake, calculates calories, tracks footsteps, and uses machine learning to recommend meals based on the user’s health goals.
+
+**Tech Stack:** Android Studio, Java/Kotlin, Firebase, TensorFlow Lite or custom ML API, Google Fit API
+
+**Key Features:**
+
+- User profile with physical attributes (height, weight, age)
+- BMI calculator and display
+- Daily food intake tracker (calories, carbs, fats, proteins)
+- Barcode scanner for packaged food items
+- Footstep counter using phone sensors
+- ML-powered food recommendations based on user goals
+- Personal daily calorie goals with progress tracking
+
+**Modules:** User profile module, Diet tracking module, Fitness module (step counter), ML recommendation engine, Barcode scanner module.
+
+For the recommendation engine, you need to train a simple model on food data and calorie values, then deploy it using TensorFlow Lite for on-device inference. If you have not worked with ML before, start with our [Python for machine learning](https://codingzap.com/python-for-machine-learning/) article to understand the basics before integrating it into Android. 
+Tools and Technologies:
+Frontend: Kotlin/Java (Android Studio)
+Database: Firebase Cloud Firestore (NoSQL) & Room Database (Local Storage)
+AI & Machine Learning: TensorFlow Lite & Scikit-learn (Python)
+Authentication: Firebase Authentication
+API: Open Food Facts REST API
+Sensors & Health: Health Connect SDK & Android SensorManager API
+Barcode & Vision: Google ML Kit Barcode Scanning API
+Styling & UI: Material Design 3
+Analytics & Reports: MPAndroidChart
+Version Control: Git and GitHub
+ERD & Diagrams: Draw.io
+Deployment: APK Build (Android Studio)
+
+Kotlin/java (Android Studio)
+
+কী কাজ করবেন: অ্যান্ড্রয়েড অ্যাপের স্ক্রিনগুলো (UI) ডিজাইন করবেন এবং সেন্সর, ক্যামেরা ও ডাটাবেসের লজিক তৈরি করবেন।
+
+কেন করবেন: এটি গুগল কর্তৃক অ্যান্ড্রয়েড ডেভেলপমেন্টের অফিশিয়াল এবং সবচেয়ে জনপ্রিয় ভাষা।
+
+Firebase Cloud Firestore
+
+কী কাজ করবেন: ইউজার লগইন করলে তার অনলাইন ডাটা (যেমন: ইমেইল, প্রোফাইল, প্রতিদিনের টোটাল ক্যালোরি ও স্টেপ হিস্ট্রি) সার্ভারে সেভ রাখবেন।
+
+কেন করবেন: ইউজার ফোন পরিবর্তন করলেও যেন তার আগের দিনের স্বাস্থ্য ও ফিটনেসের হিসাব হারিয়ে না যায়।
+
+Room Database
+
+কী কাজ করবেন: ইন্টারনেটে যুক্ত না থাকলেও ফোনের ভেতরের লোকাল স্টোরেজে প্রতিদিনের হাঁটার স্টেপ ও তাৎক্ষণিক খাবারের হিসাব সাময়িকভাবে সেভ রাখবেন।
+
+কেন করবেন: ইন্টারনেট কানেকশন না থাকলেও যেন স্টেপ কাউন্টার বন্ধ না হয় এবং অ্যাপ যেন খুব দ্রুত লোড হয়।
+
+TensorFlow Lite & Scikit-learn (Python)
+
+কী কাজ করবেন: পাইথন দিয়ে খাবারের ক্যালোরি ও ইউজারের লক্ষ্যের ওপর একটি ML মডেল ট্রেইন করে তাকে .tflite ফাইল বানিয়ে অ্যাপে যুক্ত করবেন, যা খাবারের পরামর্শ (Food Recommendation) দেবে।
+
+কেন করবেন: অ্যাপে ক্লাউড সার্ভার ছাড়াই সরাসরি ইউজারের ফোনেই আর্টিফিশিয়াল ইন্টেলিজেন্স ব্যবহার করে স্মার্ট মিল রেকমেন্ডেশন দেওয়ার জন্য।
+
+Firebase Authentication
+
+কী কাজ করবেন: ইউজারদের ইমেইল/পাসওয়ার্ড বা গুগল অ্যাকাউন্ট দিয়ে নিরাপদ সাইন-আপ ও লগইনের সুবিধা দেবেন।
+
+কেন করবেন: প্রতিটি ইউজারের ব্যক্তিগত স্বাস্থ্যের ডাটা যেন আলাদা এবং নিরাপদ থাকে।
+
+Open Food Facts REST API
+
+কী কাজ করবেন: ইন্টারনেটে যুক্ত আন্তর্জাতিক খাবারের বিশাল ডাটাবেস থেকে বিভিন্ন নিউট্রিশন তথ্য (ক্যালোরি, প্রোটিন, ফ্যাট) সংগ্রহ করবেন।
+
+কেন করবেন: বিশ্বের লক্ষ লক্ষ প্যাকেটজাত খাবারের নিউট্রিশন তথ্য নিজে নিজে অ্যাপে ম্যানুয়ালি এন্ট্রি করা অসম্ভব।
+Health Connect SDK & SensorManager
+
+কী কাজ করবেন: ইউজারের ফোনের ভেতর থাকা স্টেপ সেন্সর থেকে দৈনিক হাঁটার তথ্য (Step Count) সরাসরি পড়ে নেবেন।
+
+কেন করবেন: কোনো আলাদা স্মার্টওয়াচ বা ব্যান্ড ছাড়াই শুধু সাধারণ স্মার্টফোন দিয়েই হাঁটার সঠিক হিসাব রাখার জন্য।
+
+Google ML Kit Barcode Scanning API
+
+কী কাজ করবেন: ক্যামেরা দিয়ে যেকোনো প্যাকেটজাত খাবারের বারকোড মুহূর্তের মধ্যে স্ক্যান ও কোড ডিটেক্ট করার জন্য।
+
+কেন করবেন: ইউজারকে টাইপ না করিয়ে দ্রুত বারকোড স্ক্যান করে ওপেন ফুড ফ্যাক্টস এপিআই থেকে সেই খাবারের ক্যালোরি বের করে দেওয়ার জন্য।
+
+Material Design 3
+
+কী কাজ করবেন: অ্যাপের বাটন, কালার, ফ্রন্ট, কার্ড এবং ওভারঅল লুক গুগলের আধুনিক গাইডলাইন অনুযায়ী সুন্দর করবেন।
+
+কেন করবেন: অ্যাপের ইউজার ইন্টারফেস (UI) দেখতে যেন আকর্ষক এবং প্রফেশনাল হয়।
+
+MPAndroidChart
+
+কী কাজ করবেন: ইউজারের সারা সপ্তাহের বা মাসের ক্যালোরি গ্রহণ ও হাঁটার হিসাব নিয়ে সুন্দর গ্রাফ ও বার-চার্ট আঁকবেন।
+
+কেন করবেন: ডাটা ভিজ্যুয়ালাইজেশনের মাধ্যমে ইউজার যেন এক নজরে তার ফিটনেসের অগ্রগতি বুঝতে পারে।
+
+Git and GitHub
+
+কী কাজ করবেন: আপনার কোডের বিভিন্ন ভার্সন ও হিস্ট্রি ক্লাউডে সেভ রাখবেন।
+
+কেন করবেন: কোড নষ্ট বা হারিয়ে যাওয়া থেকে রক্ষা করতে এবং টিচারে প্রজেক্ট প্রোগ্রেস দেখাতে।
+
+Draw.io
+
+কী কাজ করবেন: প্রজেক্টের ডাটাবেসের নকশা (ERD), আর্কিটেকচার ও প্রসেস ফ্লো ডায়াগ্রাম আঁকবেন।
+
+কেন করবেন: ফাইনাল ইয়ারের প্রজেক্ট রিপোর্ট বই এবং প্রেজেন্টেশন ডিফেন্সে জমা দেওয়ার জন্য।
+
+APK Build (Android Studio)
+
+কী কাজ করবেন: সম্পূর্ণ কোডিং শেষ হলে অ্যান্ড্রয়েড স্টুডিও দিয়ে প্রজেক্টের আউটপুট ইনস্টলেবল ফাইল (.apk) তৈরি করবেন।
+
+কেন করবেন: প্রজেক্ট প্রেজেন্টেশনের সময় টিচার বা বন্ধুদের ফোনে অ্যাপটি ইনস্টল করে সরাসরি ডেমো দেখানোর জন্য।
+
+Key Features:
+User profile with physical attributes (height, weight, age)
+BMI calculator and display
+Daily food intake tracker (calories, carbs, fats, proteins)
+Barcode scanner for packaged food items
+Footstep counter using phone sensors
+ML-powered food recommendations based on user goals
+Personal daily calorie goals with progress tracking
+
+Gemini link:https://share.gemini.google/cNjZzfu6Eaoa
