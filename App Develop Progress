@@ -1,1 +1,101 @@
+Phase 1 — Basic
 
+The Basic phase focuses on creating the initial application structure, user interface, and navigation. At this stage, the main goal is to create the basic screens of the application using Kotlin and XML.
+
+Features
+
+1. Login & Sign Up
+Users will be able to access the application through Login and create a new account through the Sign Up screen.
+
+2. Home/Dashboard
+The home screen will provide an overview of the user's health information, such as BMI, calories, and steps.
+
+3. Community
+A basic community section will allow users to see posts related to health and fitness.
+
+4. Like & Comment
+Users will be able to like posts and add comments to community posts.
+
+Technologies
+Android Studio
+Kotlin
+XML
+Material Design
+
+Main goal: Create the basic screens and navigation of the application.
+
+🟡 Phase 2 — Intermediate
+
+The Intermediate phase focuses on making the basic screens functional and connecting the application with databases and external services.
+
+Features
+
+1. Firebase Authentication
+Users will be able to create accounts and securely log in using Firebase Authentication.
+
+2. User Profile
+Users will be able to store information such as name, age, height, weight, and other basic details.
+
+3. BMI Calculator
+The application will calculate BMI based on the user's height and weight and display the result.
+
+4. Food Tracker
+Users will be able to record their daily food intake, including calories, protein, carbohydrates, and fats.
+
+5. Step Counter
+The application will use the phone's sensors to track the user's daily steps.
+
+6. Community System
+Users will be able to create posts, like posts, and write comments. The data will be stored online.
+
+7. Barcode Scanner
+Users will be able to scan packaged food barcodes and retrieve nutritional information.
+
+8. Food Database
+The application will use the Open Food Facts API to retrieve information such as calories, protein, fat, and carbohydrates.
+
+Technologies
+Firebase Authentication
+Firebase Cloud Firestore
+Room Database
+Android SensorManager
+Google ML Kit Barcode Scanning
+Open Food Facts REST API
+
+Main goal: Convert the Basic UI into a functional health and diet monitoring application.
+
+🔴 Phase 3 — Final
+
+The Final phase focuses on adding the AI/ML features, health integration, analytics, and final improvements.
+
+Features
+
+1. AI-Based Food Recommendation
+The application will recommend suitable foods or meals based on user information, health goals, calorie requirements, and food data.
+
+2. Machine Learning Model
+A machine learning model will be trained using Python and Scikit-learn. The trained model will later be converted to TensorFlow Lite for use inside the Android application.
+
+3. Personalized Recommendations
+The application will provide recommendations based on individual user goals, such as weight management or maintaining a healthy diet.
+
+4. Health Connect Integration
+Health-related activity information can be integrated through Android Health Connect.
+
+5. Progress Tracking & Charts
+The application will display calorie intake, steps, weight, and other progress using graphs and charts.
+
+6. Final UI & Testing
+The application interface will be improved using Material Design 3. The complete application will then be tested, bugs will be fixed, and the final APK will be generated.
+
+Technologies
+Python
+Scikit-learn
+TensorFlow Lite
+Health Connect SDK
+MPAndroidChart
+Material Design 3
+Git & GitHub
+Android Studio
+
+Main goal: Add AI-powered recommendations, health integration, analytics, and prepare the application for final deployment.
