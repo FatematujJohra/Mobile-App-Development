@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Step Counter Permission -->
+    <uses-permission
+        android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:label="AI Based Diet And Health Monitoring"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AIBasedDietAndHealthMonitoring">
+        <!-- Recommendation activity -->
+        <activity
+            android:name=".RecommendationActivity"
+            android:exported="false" />
+        <!-- Progress Activity -->
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="false" />
+
+        <!-- Health Profile -->
+        <activity
+            android:name=".HealthProfileActivity"
+            android:exported="false" />
+
+        <!-- Login Page -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Sign Up Page -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+
+        <!-- Home / Dashboard Page -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Community Page -->
+        <activity
+            android:name=".CommunityActivity"
+            android:exported="false" />
+
+        <!-- Food Tracker -->
+        <activity
+            android:name=".FoodTrackerActivity"
+            android:exported="false" />
+
+        <!-- Step Counter -->
+        <activity
+            android:name=".StepCounterActivity"
+            android:exported="false" />
+
+        <!-- 'Welcome' Page -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
